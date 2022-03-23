@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hector Lopez</title>
-    <link>https://hectorlop.com/</link>
-    <description>Recent content on Hector Lopez</description>
+    <title>Blogs on Hector Lopez</title>
+    <link>https://hectorlop.com/blog/</link>
+    <description>Recent content in Blogs on Hector Lopez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 May 2021 11:30:13 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 03 Apr 2021 23:29:21 +0530</lastBuildDate>
     
-	<atom:link href="https://hectorlop.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hectorlop.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Example project with details</title>
-      <link>https://hectorlop.com/project/example/</link>
-      <pubDate>Tue, 04 May 2021 11:30:13 +0530</pubDate>
-      
-      <guid>https://hectorlop.com/project/example/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Markdown Syntax</title>
