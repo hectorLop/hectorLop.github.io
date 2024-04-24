@@ -14,8 +14,8 @@ output_dir = "public"
 compile_sass = true
 minify_html = true
 build_search_index = false            # Keep this false, search is temporarily unsupported
-generate_feed = true                 # Whether to generate a feed file in root, read docs for more info about rss feed
-feed_filename = "atom.xml"            # The file name of feed, "feed.xml" / "atom.xml" / "rss.xml", read docs for more info
+#generate_feed = true                 # Whether to generate a feed file in root, read docs for more info about rss feed
+#feed_filename = "feed.xml"            # The file name of feed, "feed.xml" / "atom.xml" / "rss.xml", read docs for more info
 taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 [markdown]
@@ -44,20 +44,19 @@ avatar = "img/avatar.jpeg"            # Your avatar
 
 #============== Social media links =================================
 links = [                             # Your links
-    { name = "GitHub", icon = "github", url = "https://github.com/<your-username>" },
-    { name = "Twitter", icon = "twitter", url = "https://twitter.com/<your-username>" },
-    { name = "Email", icon = "email", url = "mailto:<your-email-address>" },
+    { name = "GitHub", icon = "github", url = "https://github.com/hectorLop" },
+    { name = "Email", icon = "email", url = "mailto:lopez.almazan.hector@gmail.com" },
 ]
 
 #============== Icons, you can choose at https://remixicon.com/ ====
 blog_icon = "ri-terminal-box-line"          
 projects_icon = "ri-compasses-2-line"
 home_icon = "ri-user-6-line"
-rss_icon = "ri-rss-line"
+#rss_icon = "ri-rss-line"
 toc_icon = "ri-menu-2-line"
 
 #============== Feed ===============================================
-feed_in_blog_section = true      # Whether to make feed file in blog section, url will be https://example.com/blog/feed.xml, read docs for more info about rss feed
+feed_in_blog_section = false      # Whether to make feed file in blog section, url will be https://example.com/blog/feed.xml, read docs for more info about rss feed
 
 #homepage_layout = "about"             # "about" | "list" | "recent"
 #
@@ -102,7 +101,7 @@ outdate_warn_text_before = "Note: This article was last updated "
 outdate_warn_text_after = " days ago and may be out of date."
 
 #============== Footer =============================================
-footer_copyright = "test"
+footer_copyright = ""
 footer_copyright_name = "Hector Lopez"
 footer_copyright_year = "2024"
 footer_custom = "Reflections"
