@@ -1,6 +1,6 @@
 +++
-title = "My Blog"
-description = "My blog site."
+title = "Hector's blog"
+description = "Reflections and ideas of a software engineer"
 sort_by = "date"
 template = "blog.html"
 page_template = "post.html"

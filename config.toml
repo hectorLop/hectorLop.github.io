@@ -38,8 +38,8 @@ anchors = "on"
 [extra]
 
 name = "Hector Lopez"                         # Your name
-id = "hectorLop"                           # Your id / username / handle
-bio = "Reflections"                          # Your bio
+id = "Hector Lopez"                           # Your id / username / handle
+bio = "Just another strategy pattern guy"                          # Your bio
 avatar = "img/avatar.jpeg"            # Your avatar
 
 #============== Social media links =================================
@@ -75,7 +75,7 @@ nav_wrapper_separator = ","
 #
 #
 #display_id = true                     # Whether to display your id on homepage
-#blog_categorized = true               # Whether to categorize blog posts
+blog_categorized = true               # Whether to categorize blog posts
 #blur_effect = true                    # Whether to turn on blur effect on navigation bar
 #back_to_top = true                    # Whether to show back-to-top button on post pages
 #
