@@ -5,7 +5,7 @@
 #
 #=========================================================================================
 
-base_url = "http://hectorlop.com"
+base_url = "https://www.hectorlop.com"
 title = "Hector Lopez"
 description = "Reflections"
 default_language = "en"
@@ -66,6 +66,7 @@ feed_in_blog_section = false      # Whether to make feed file in blog section, u
 #
 sections = [
     { name = "blog", path = "/blog", is_external = false },
+    { name = "apps", path = "/apps", is_external = false },
 ]
 blog_section_path = "/blog"
 nav_separator = "::"
@@ -101,8 +102,16 @@ outdate_warn_text_before = "Note: This article was last updated "
 outdate_warn_text_after = " days ago and may be out of date."
 
 #============== Footer =============================================
-footer_copyright = ""
+footer_copyright = "© 2026 Hector Lopez · [Aviso legal](/legal/) · [Privacidad](/privacy/)"
 footer_copyright_name = "Hector Lopez"
-footer_copyright_year = "2024"
+footer_copyright_year = "2026"
 footer_custom = "Reflections"
 footer_credits = false            # Whether to show "Powered by Zola and Serene" in footer
+
+#============== Legal identity ====================================
+# Shown in the legal notice (LSSI), the privacy policies and the app support pages.
+# Empty values render a visible [PENDIENTE] marker: fill them before linking the pages from the stores.
+legal_name = "Héctor López Almazán"
+legal_nif = ""
+legal_address = ""
+contact_email = "lopez.almazan.hector.dev@gmail.com"

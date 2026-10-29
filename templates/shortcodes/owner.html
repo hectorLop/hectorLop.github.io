@@ -1,0 +1,9 @@
+{#- `lang` is injected by Zola with the site language, so the argument is `locale` -#}
+{%- set en = locale | default(value="es") == "en" -%}
+{%- set pending = '<mark>[PENDIENTE · PENDING]</mark>' -%}
+<ul>
+  <li>{% if en %}Owner{% else %}Titular{% endif %}: {{ config.extra.legal_name }}</li>
+  <li>{% if en %}Tax ID (NIF){% else %}NIF{% endif %}: {% if config.extra.legal_nif %}{{ config.extra.legal_nif }}{% else %}{{ pending | safe }}{% endif %}</li>
+  <li>{% if en %}Address{% else %}Domicilio{% endif %}: {% if config.extra.legal_address %}{{ config.extra.legal_address }}{% else %}{{ pending | safe }}{% endif %}</li>
+  <li>Email: <a href="mailto:{{ config.extra.contact_email }}">{{ config.extra.contact_email }}</a></li>
+</ul>
