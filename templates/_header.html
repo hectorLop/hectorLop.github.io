@@ -2,11 +2,9 @@
   <div id="header-wrapper">
     <nav>
       <a class="instant" href="/">{{ config.extra.id }}</a>
-      <!--{% if config.extra.sections | length > 1 %}
-      <!--  <button id="toggler" class="separator" aria-label="toggle expand">{{ config.extra.nav_separator }}</button>
-      <!--{% else %}
-      <!--  <span class="separator">{{ config.extra.nav_separator }}</span>
-      <!--{% endif %}-->
+      {% if config.extra.sections | length > 1 %}
+        <button id="toggler" class="separator" aria-label="toggle expand">{{ config.extra.nav_separator }}</button>
+      {% endif %}
       {% if config.extra.sections | length > 1 %}
         <span class="wrap left fold">{{ config.extra.nav_wrapper_left }}</span>
         {% set_global is_taxonomies_path = false %}

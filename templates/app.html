@@ -1,0 +1,36 @@
+{% extends "_base.html" %}
+
+{% block page %}prose-page{% endblock page %}
+{% block lang %}{% if section.extra.lang %}{{ section.extra.lang }}{% else %}{{ section.lang }}{% endif %}{% endblock lang %}
+{% block title %}{{ section.title }}{% endblock title %}
+{% block desc %}
+  <meta name="description" content="{{ section.description }}">
+{% endblock desc %}
+
+{% block content %}
+{% include "_header.html" %}
+<div id="wrapper">
+  <main>
+    <article class="prose">
+      <h1>{{ section.title }}</h1>
+      {{ section.content | safe }}
+
+      {% if section.extra.google_play_url or section.extra.app_store_url %}
+      <h2>Descargar · Download</h2>
+      <ul>
+        {% if section.extra.app_store_url %}<li><a href="{{ section.extra.app_store_url }}">App Store</a></li>{% endif %}
+        {% if section.extra.google_play_url %}<li><a href="{{ section.extra.google_play_url }}">Google Play</a></li>{% endif %}
+      </ul>
+      {% endif %}
+
+      <h2>Información · Information</h2>
+      <ul>
+        {% for page in section.pages %}
+        <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </article>
+    {% include "_footer.html" %}
+  </main>
+</div>
+{% endblock content %}
