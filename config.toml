@@ -112,6 +112,6 @@ footer_credits = false            # Whether to show "Powered by Zola and Serene"
 # Shown in the legal notice (LSSI), the privacy policies and the app support pages.
 # Empty values render a visible [PENDIENTE] marker: fill them before linking the pages from the stores.
 legal_name = "Héctor López Almazán"
-legal_nif = ""
-legal_address = ""
+legal_nif = "18058571Y"
+legal_address = "Pasaje Arco Iris, 4, 22005 Huesca"
 contact_email = "lopez.almazan.hector.dev@gmail.com"
