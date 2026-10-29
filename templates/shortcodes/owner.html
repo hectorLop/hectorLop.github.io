@@ -1,9 +1,16 @@
 {#- `lang` is injected by Zola with the site language, so the argument is `locale` -#}
 {%- set en = locale | default(value="es") == "en" -%}
+{#- NIF and address are only required in the LSSI legal notice; elsewhere link to it -#}
+{%- set full = full | default(value=false) -%}
 {%- set pending = '<mark>[PENDIENTE · PENDING]</mark>' -%}
 <ul>
   <li>{% if en %}Owner{% else %}Titular{% endif %}: {{ config.extra.legal_name }}</li>
+  {%- if full %}
   <li>{% if en %}Tax ID (NIF){% else %}NIF{% endif %}: {% if config.extra.legal_nif %}{{ config.extra.legal_nif }}{% else %}{{ pending | safe }}{% endif %}</li>
   <li>{% if en %}Address{% else %}Domicilio{% endif %}: {% if config.extra.legal_address %}{{ config.extra.legal_address }}{% else %}{{ pending | safe }}{% endif %}</li>
+  {%- endif %}
   <li>Email: <a href="mailto:{{ config.extra.contact_email }}">{{ config.extra.contact_email }}</a></li>
+  {%- if not full %}
+  <li>{% if en %}Full details in the <a href="/legal/#en">legal notice</a>{% else %}Datos completos en el <a href="/legal/">aviso legal</a>{% endif %}</li>
+  {%- endif %}
 </ul>

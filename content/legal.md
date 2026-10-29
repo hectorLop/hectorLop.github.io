@@ -14,7 +14,7 @@ lang = "es"
 
 En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), estos son los datos del titular de www.hectorlop.com:
 
-{{ owner() }}
+{{ owner(full=true) }}
 
 Actividad: desarrollo y publicación de aplicaciones móviles, y blog personal.
 
@@ -44,7 +44,7 @@ Este aviso se rige por la legislación española.
 
 Owner of www.hectorlop.com, as required by the Spanish Information Society Services Act (LSSI-CE):
 
-{{ owner(locale="en") }}
+{{ owner(locale="en", full=true) }}
 
 Activity: development and publishing of mobile apps, and a personal blog.
 
